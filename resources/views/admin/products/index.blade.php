@@ -6,7 +6,7 @@
                 <h3 class="text-center">{{ __('Products') }}</h3>
             </div>
             <div class="col-md-12">
-                @if (session('status'))
+                @if (session('status'))php artisan storage:link
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>

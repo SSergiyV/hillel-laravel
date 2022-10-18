@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Categories;
+namespace App\Http\Requests\Products\Categories;
 
 use Illuminate\Foundation\Http\FormRequest;
 

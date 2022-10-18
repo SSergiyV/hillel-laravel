@@ -1,9 +1,7 @@
 <?php
 
-namespace App\Http\Requests\Categories;
+namespace App\Http\Requests\Products\Categories;
 
-use App\Models\Category;
-use App\Models\Role;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 

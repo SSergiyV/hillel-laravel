@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Auth;
+namespace App\Http\Requests\Products\Auth;
 
 use App\Rules\Phone;
 use Illuminate\Foundation\Http\FormRequest;
