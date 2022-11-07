@@ -28,7 +28,7 @@ class HomeController extends Controller
         $categories = Category::all()->take(2);
         $products = Product::all()->take(6);
 
-        notify()->success('Test', 'Message');
+        notify()->success('', 'Hello!!!');
 
         return view('home', compact('products', 'categories'));
     }

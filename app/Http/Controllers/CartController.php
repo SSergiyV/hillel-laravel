@@ -21,15 +21,13 @@ class CartController extends Controller
             $product->endPrice
         )->associate(Product::class);
 
-        notify()->success("Product was added to the cart", position: "topRight");
-
         return redirect()->back();
     }
 
     public function remove(Request $request) {
         Cart::instance('cart')->remove($request->rowId);
 
-        notify()->success("Product was removed", position: "topRight");
+        notify()->success("Product was removed", position: "bottomRight");
 
         return redirect()->back();
     }
@@ -46,7 +44,7 @@ class CartController extends Controller
             $request->product_count
         );
 
-        notify()->success("Product count was updated", position: "topRight");
+        notify()->success("Product count was updated", position: "bottomRight");
 
         return redirect()->back();
     }

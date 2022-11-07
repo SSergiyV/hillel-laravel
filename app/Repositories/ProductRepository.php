@@ -7,7 +7,7 @@ use App\Http\Requests\Products\Products\CreateProductRequest;
 use App\Http\Requests\Products\UpdateProductRequest;
 use App\Models\Category;
 use App\Models\Product;
-use App\Repositories\Contract\ProductRepositoryContract;
+use App\Repositories\Contracts\ProductRepositoryContract;
 use Illuminate\Support\Facades\DB;
 
 class ProductRepository implements ProductRepositoryContract

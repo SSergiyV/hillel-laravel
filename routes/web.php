@@ -40,3 +40,8 @@ Route::name('admin.')->prefix('admin')->middleware(['auth', 'admin'])->group(fun
     Route::resource('products', \App\Http\Controllers\Admin\ProductsController::class)->except(['show']);
     Route::resource('categories', \App\Http\Controllers\Admin\CategoriesController::class)->except(['show']);
 });
+
+Route::prefix('paypal')->group(function() {
+    Route::post('order/create', [\App\Http\Controllers\Payments\PaypalController::class, 'create']);
+    Route::post('order/{orderID}/capture', [\App\Http\Controllers\Payments\PaypalController::class, 'capture']);
+});
