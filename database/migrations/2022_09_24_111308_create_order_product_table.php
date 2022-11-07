@@ -17,6 +17,10 @@ return new class extends Migration
             $table->id();
             $table->foreignId('order_id')->constrained('orders');
             $table->foreignId('product_id')->constrained('products');
+
+            /**
+             * Pivot fields
+             */
             $table->unsignedInteger('quantity');
             $table->unsignedFloat('single_price');
 
